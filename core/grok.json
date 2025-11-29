@@ -1,0 +1,20 @@
+[
+  {
+    "xsid_script": "static/chunks/9031fc1e820c91fa.js",
+    "action_script": "/_next/static/chunks/8769470d35979433.js",
+    "actions": [
+      "7ffc3b9c677cf80a05492600b4c954dc2d7a74a2b9",
+      "7f0fd3040f586c0016082fdf6d15a7effc09d1f9ea",
+      "7f888b835ea7868acd8a14fb355d15d14c56785674"
+    ]
+  },
+  {
+    "xsid_script": "static/chunks/68f6ef173efbeb67.js",
+    "action_script": "/_next/static/chunks/4114b4b6e0483e8c.js",
+    "actions": [
+      "7f3749b0c81bd826ca8cc02ccf8009a911410e49f7",
+      "7f5e48bfe2a1588dc86c1fe1bf3eac0e2676f55532",
+      "7f5341512f3793d10791b2ca628b300aac6ba34b98"
+    ]
+  }
+]
