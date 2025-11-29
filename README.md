@@ -1,4 +1,4 @@
-# **Beseri-AI**
+# **🤖Beseri-AI**
 
 ### **Adaptive Intelligence Framework for Modular, Extensible, and Autonomous AI Systems**
 
