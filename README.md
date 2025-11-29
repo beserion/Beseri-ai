@@ -1,7 +1,3 @@
-Elindeki **Beseri-AI** projesi için GitHub’da “bu neymiş lan?” dedirtecek, **profesyonel**, **etkileyici**, **kurumsal**, **benzersiz** bir `README.md` aşağıda hazır:
-
----
-
 # **Beseri-AI**
 
 ### **Adaptive Intelligence Framework for Modular, Extensible, and Autonomous AI Systems**
@@ -157,5 +153,3 @@ If you like Beseri-AI, give it a **star on GitHub** — it helps the project gro
 MIT License — free for personal and commercial use.
 
 ---
-
-Dilersen istersen bunu daha kurumsal, daha teknik, daha minimal ya da daha agresif bir tarza göre yeniden yazayım. İstersen proje içeriğine göre tamamen özel bir README de üretebilirim.
