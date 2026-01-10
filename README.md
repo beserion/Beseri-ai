@@ -153,3 +153,5 @@ If you like Beseri-AI, give it a **star on GitHub** — it helps the project gro
 MIT License — free for personal and commercial use.
 
 ---
+
+- minor update @ 2026-01-10 18:11:55.288157
