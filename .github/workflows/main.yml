@@ -1,0 +1,56 @@
+name: Natural Contribution Engine
+
+on:
+  schedule:
+    # Günde 3 farklı saat → doğal görünüm
+    - cron: "11 6 * * *"
+    - cron: "37 14 * * *"
+    - cron: "53 21 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  contribute:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repo'yu çek
+        uses: actions/checkout@v4
+
+      - name: Bugün çalışıyor muyuz?
+        run: |
+          # %33 ihtimalle çalışır, %66 chill
+          if [ $((RANDOM % 3)) -ne 0 ]; then
+            echo "Bugün pas geçildi 😴"
+            exit 0
+          fi
+
+      - name: Repo seç
+        run: python scripts/pick_repo.py
+
+      - name: Hedef repo clone
+        run: |
+          REPO=$(cat selected_repo.txt)
+          echo "Seçilen repo: $REPO"
+          git clone https://github.com/$REPO target
+
+      - name: Değişiklik yap
+        run: |
+          cd target
+          python ../scripts/make_change.py
+
+      - name: AI commit mesajı (Gemini)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/ai_commit_message.py
+
+      - name: Commit & push
+        run: |
+          cd target
+          git config user.name "beserion"
+          git config user.email "github@users.noreply.github.com"
+          git add .
+          git commit -m "$(cat ../commit_msg.txt)"
+          git push
